@@ -3,9 +3,10 @@ const path = require('path')
 
 exports.createPages = ({ actions }) => {
   return fetch('https://quote-garden.herokuapp.com/quotes/all').then(r => r.json()).then((response) => {
-    const ITEMS_PER_PAGE = 12
+    const ITEMS_PER_PAGE = 24
     const QuotesTemplate = path.resolve('./src/templates/Quotes.js')
     const chunkedArr = []
+    let quoteNumber = 0
     for (let i = 0, arrayLength = response.results.length; i < arrayLength; i += ITEMS_PER_PAGE) {
       chunkedArr.push(response.results.slice(i, i + ITEMS_PER_PAGE))
     }
@@ -15,7 +16,13 @@ exports.createPages = ({ actions }) => {
         component: QuotesTemplate,
         context: {
           currentPage: index + 1,
-          data: quotes,
+          data: quotes.map(quote => {
+            quoteNumber++
+            return {
+              ...quote,
+              quoteNumber
+            }
+          }),
           numberOfPages: Math.ceil(response.results.length / ITEMS_PER_PAGE)
         }
       })
