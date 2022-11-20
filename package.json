@@ -7,7 +7,7 @@
     "gatsby": "^2.19.12",
     "gatsby-plugin-flow": "^1.1.20",
     "global-agent": "^2.1.8",
-    "graphql": "^14.6.0",
+    "graphql": "^16.0.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
