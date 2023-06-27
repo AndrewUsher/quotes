@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "gatsby": "^2.19.12",
-    "gatsby-plugin-flow": "^1.1.20",
+    "gatsby": "^5.0.0",
+    "gatsby-plugin-flow": "^4.0.0",
     "global-agent": "^2.1.8",
     "graphql": "^14.6.0",
     "isomorphic-fetch": "^2.2.1",
