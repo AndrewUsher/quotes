@@ -22,7 +22,7 @@
     "@drewster/eslint-config": "1.0.2",
     "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
-    "flow-bin": "0.120.1",
+    "flow-bin": "0.232.0",
     "flow-typed": "3.0.0"
   }
 }
