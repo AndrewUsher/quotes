@@ -6,7 +6,7 @@
   "dependencies": {
     "gatsby": "^2.19.12",
     "gatsby-plugin-flow": "^1.1.20",
-    "global-agent": "^2.1.8",
+    "global-agent": "^3.0.0",
     "graphql": "^14.6.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^17.0.0",
